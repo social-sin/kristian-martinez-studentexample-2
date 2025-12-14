@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #222;
+  background-color: #e4fff1;
+  line-height: 1.4;
+  font-size: 15pt;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+
+/* FONTS */
+
+.sarpanch-regular {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sarpanch-medium {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.sarpanch-semibold {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sarpanch-bold {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sarpanch-extrabold {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.sarpanch-black {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+.orbitron-<uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  width: auto;
+  background-color: #171717;
+  padding: 0 3rem;
+  font-family: sarpanch;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.gamecube-logo {
+  height: 8rem;
+  width: auto;
+}
+
+a {
+  color: #e4fff1;
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* MAIN CONTENT */
+
+.container {
+  height: 100vh;
+  width: auto;
+  background-image: linear-gradient(rgb(13 13 13 / 95%), rgb(13 13 13 / 75%)),url("https://i.redd.it/kbhalvngef211.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  text-align: center;
+  padding-top: 9rem;
+  font-family: orbitron;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  color: #e4fff1;
+  margin-top: 0rem;
+}
+
+.nintendogamecube {
+  line-height: 5.5rem;
+}
+
+.winter {
+  margin-top: -3rem;
+}
+
+.whats-hot {
+  font-family: orbitron;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.content {
+ display: grid;
+ grid-template: repeat(4, 30%) / repeat(2, 50%);
+ gap: 4rem 0;
+ padding-bottom: 50rem;
+}
+
+h2 {
+  font-family: sarpanch;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #7851a9;
+  padding-top: 25px;
+}
+
+p {
+  padding-top: 15px
+}
+
+.metroid-images {
+  background-image: url("https://metroiddatabase.com/old_site/mp/art/mp_savestation.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 200px 0 0 75px;
+  box-shadow: 2rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.zelda-images {
+  background-image: url("https://cdn.wikimg.net/en/zeldawiki/images/3/31/Wind_Waker_Scene.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 200px 75px 0;
+  box-shadow: -2rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.mario-images {
+  background-image: url("https://mario.wiki.gallery/images/7/7d/GroupArtSunshine.jpg");
+  background-size: cover;
+  background-position: 0 -14rem;
+  border-radius: 200px 0 0 75px;
+  box-shadow: 2rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.evil-images {
+  background-image: url("https://www.creativeuncut.com/gallery-08/art/re0-misc01.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 250px 75px 0;
+  box-shadow: -2rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.metroid-text, .zelda-text, .mario-text, .evil-text {
+  padding: 2rem 4rem;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+  padding: 0 3rem;
+  height: 17rem;
+  background-color: #171717;
+  color: #e4fff1;
+}
+
+footer a {
+  color: #646464
+}
+
+footer a:hover {
+  color: #e4fff1;
+}
+
+.sources {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 100
+}
+
+
+/* PHONE SCREEN */
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+
+/* HEADER */
+
+  header {
+    padding: 0 2rem;
+  }
+  
+  .directory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .gamecube-logo {
+    height: 6rem;
+  }
+  
+/* MAIN CONTENT */
+  
+  .container {
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(rgb(23 23 23 / 95%), rgb(23 23 23 / 50%)),url("https://i.redd.it/kbhalvngef211.jpg");
+    background-repeat: ;
+    background-size: 150%;
+    background-color: black;
+  }
+
+  .title {
+    padding-top: 16rem;
+    font-size: 2.5rem;
+  }
+
+  .nintendogamecube {
+    line-height: 4.5rem
+  }
+  
+  .content {
+    display: grid;
+    grid-template: repeat(8, 44em) / repeat(1, 100%);
+    padding-bottom: 0rem;
+  }
+
+  .metroid-images, .zelda-images, .mario-images, .evil-images {
+    border-radius: 0 0 0 0;
+    box-shadow:0 0 0 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .metroid-text, .zelda-text, .mario-text, .evil-text {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2rem
+  }
+
+  .metroid-images {
+    order: 1;
+    background-size: 150%;
+    border-radius: 200px 0 0 200px;
+    box-shadow: 2rem 1rem 2rem 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .metroid-text {
+    order: 2;
+  }
+
+  .zelda-images {
+    order: 3;
+    border-radius: 0px 200px 200px 0;
+    box-shadow: -2rem 1rem 2rem 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .zelda-text {
+    order: 4;
+  }
+
+  .mario-images {
+    order: 5;
+    background-position: 0 -7rem;
+    background-size: 110%;
+    border-radius: 200px 0 0 200px;
+    box-shadow: 2rem 1rem 2rem 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .mario-text {
+    order: 6;
+  }
+
+  .evil-images {
+    order: 7;
+    border-radius: 0px 200px 200px 0;
+    box-shadow: -2rem 1rem 2rem 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .evil-text {
+    order: 8;
+  }
+  
+/* FOOTER */
+
+  footer {
+    font-size: 0.73rem;
+    padding: rem 3rem ;
+    height: 21rem;
+  }
+
+  .contact_info {
+    text-align: left;
+  }
+  
+  .sources {
+    text-align: right;
+    width: 100%;
+  }
